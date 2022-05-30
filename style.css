@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D6E9FF;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 5em auto;
+    position: relative;
+}
+
+.carousel {
+    background-color: #fff;
+    box-shadow: 0 6px 30px hsl(0deg 0% 0% / 0.3);
+    padding: 2em;
+    border-radius: 10px;
+    margin-top: 2em;
+}
+
+.carousel-item,
+.carousel-item-hidden {
+    display: none;
+}
+
+.carousel-item-visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+}
+
+.carousel-item h2 {
+    letter-spacing: 1px;
+    margin-top: 1em;
+}
+
+.release-year {
+    margin: 0;
+    color: #0E9FAA;
+    font-size: .9rem;
+}
+
+.carousel-item .desc {
+    margin: 1em 0;
+    line-height: 1.5;
+}
+
+.carousel-item img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.container .carousel-actions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-actions button {
+    background-color: transparent;
+    border: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+    color: #00AACC;
+}
+
+.carousel-actions button:hover {
+    color: #386C94;
+}
+
+.container .carousel-actions button#carousel-button-prev {
+    margin-left: 20px;
+}
+
+.container .carousel-actions button#carousel-button-next {
+    margin-right: 20px;
+}
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
